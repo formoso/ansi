@@ -1,7 +1,7 @@
 # ΑΝΣΙ
 ΑΝΣΙ is a library that helps work with the ANSI standard in terminals using Golang.
 
-![ANSI Gopher](/assets/go-gopher-ansi.png)
+<img src="/assets/go-gopher-ansi.png" width="200" alt="ANSI Gopher" />
 
 
 ## What is the ANSI Standard?
