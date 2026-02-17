@@ -3,10 +3,11 @@ package ansi_test
 import (
 	"bytes"
 	"fmt"
-	"github/formoso/ansi"
 	"io"
 	"os"
 	"testing"
+
+	"github.com/formoso/ansi"
 )
 
 func Test_Clear_Success(t *testing.T) {
@@ -20,7 +21,7 @@ func Test_Clear_Success(t *testing.T) {
 	os.Stdout = originalStdout
 	io.Copy(&buffer, r)
 	out := buffer.String()
-	expected := "\x1b[2;23HΑΝΣΙ\x1b[H\x1b[2J"
+	expected := "\x1b[23;2HΑΝΣΙ\x1b[H\x1b[2J"
 	if out != expected {
 		t.Errorf("want %v, got %s", expected, out)
 	}

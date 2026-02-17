@@ -2,10 +2,11 @@ package ansi_test
 
 import (
 	"bytes"
-	"github/formoso/ansi"
 	"io"
 	"os"
 	"testing"
+
+	"github.com/formoso/ansi"
 )
 
 func Test_Print_Success(t *testing.T) {
@@ -18,7 +19,7 @@ func Test_Print_Success(t *testing.T) {
 	os.Stdout = originalStdout
 	io.Copy(&buffer, r)
 	out := buffer.String()
-	expected := "\x1b[2;23HΑΝΣΙ"
+	expected := "\x1b[23;2HΑΝΣΙ"
 	if out != expected {
 		t.Errorf("want %v, got %s", expected, out)
 	}
@@ -34,7 +35,7 @@ func Test_Printf_Success(t *testing.T) {
 	os.Stdout = originalStdout
 	io.Copy(&buffer, r)
 	out := buffer.String()
-	expected := "\x1b[2;23HΑΝΣΙ = ANSI"
+	expected := "\x1b[23;2HΑΝΣΙ = ANSI"
 	if out != expected {
 		t.Errorf("want %v, got %s", expected, out)
 	}
