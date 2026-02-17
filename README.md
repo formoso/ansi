@@ -1,3 +1,8 @@
+[![Go Reference](https://pkg.go.dev/badge/github.com/formoso/ansi.svg)](https://pkg.go.dev/github.com/formoso/ansi)
+[![Go Version](https://img.shields.io/badge/go-1.26-blue.svg)](https://go.dev/doc/go1.26)
+[![codecov](https://codecov.io/gh/formoso/ansi/graph/badge.svg?token=5fMR5YliAZ)](https://codecov.io/gh/formoso/ansi)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # ΑΝΣΙ
 ΑΝΣΙ is a library that helps work with the ANSI standard in terminals using Golang.
 
